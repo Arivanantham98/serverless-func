@@ -21,6 +21,7 @@ exports.handler = async (event, context, cb) => {
         headers: {
           'X-Requested-With': 'XMLHttpRequest',
           'Access-Control-Allow-Origin': '*',
+          'Access-Control-Allow-Methods': 'GET,PUT,POST,DELETE'
         },
         statusCode: 200,
         body: JSON.stringify(product),
